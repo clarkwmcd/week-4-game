@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css", href="assets/css/reset.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h1 class="text-center">CrystalsCollector!</h1>
+
+	<div id="instructions">
+		<p>You will be given a random number at the start of the game.</p>
+
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	</div>
+
+	<br>
+
+	<div class="container text-center font-weight-bold">
+	  <div class="row">
+	    <div class="col">
+	    	<p id="randomNumber"></p>
+	    </div>
+	    <div class="col alert-primary" id="scores">
+	      <p id="wins">Wins:</p>
+	      <p id="losses">Losses:</p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+		    	<img class="rounded mx-auto d-block" id="redcrystal" src="assets/images/redcrystal.jpg">
+		    </div>
+		    <div class="col">
+		    	<img class="rounded mx-auto d-block" id="bluecrystal" src="assets/images/bluecrystal.jpg">
+		    </div>
+		    <div class="col">
+		    	<img class="rounded mx-auto d-block" id="yellowcrystal" src="assets/images/yellowcrystal.jpg">
+		    </div>
+		    <div class="col">
+		    	<img class="rounded mx-auto d-block" id="greencrystal" src="assets/images/greencrystal.jpg">
+		    </div>
+		</div>
+	</div>
+
+	<div class="totalScores">Your total score is:</div>
+
+	<div class="totalScores" id="totalScore">0</div>
+</div>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>

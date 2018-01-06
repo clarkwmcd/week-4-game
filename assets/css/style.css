@@ -1,0 +1,63 @@
+
+
+h1 {
+	background-color: orange;
+	color: white;
+	margin-top: 10px;
+}
+
+#instructions {
+	background-color: yellow;
+	color: green;
+	padding: 10px;
+}
+
+#randomNumber {
+	background-color: green;
+	height: 100px;
+	line-height: 100px;
+	text-align: middle;
+	font-size: 36px;
+
+}
+
+#scores {
+	/*background-color: blue;*/
+	height: 100px;
+	line-height: 40px;
+	text-align: middle;
+	font-size: 24px;
+
+}
+
+.totalScores {
+	background-color: green;
+	margin-bottom:10px;
+	width: 50%;
+	padding-left: 10px;
+}
+
+#totalScore {
+	height: 100px;
+	line-height: 100px;
+	text-align: middle;
+	text-align: center;
+	font-size: 36px;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row {
+	/*margin-left: 0px;*/
+	margin-right: 0px;
+
+}
