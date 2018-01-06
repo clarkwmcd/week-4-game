@@ -15,7 +15,7 @@
 
 	function targetNumber()
 	{
-		randomNumber = Math.floor(Math.random()*120)+1;
+		randomNumber = Math.floor(Math.random()*120)+19;
 		$("#randomNumber").text(randomNumber);
 	};
 

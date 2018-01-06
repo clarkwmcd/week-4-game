@@ -13,7 +13,7 @@ h1 {
 }
 
 #randomNumber {
-	background-color: green;
+	background-color: chartreuse;
 	height: 100px;
 	line-height: 100px;
 	text-align: middle;
@@ -22,7 +22,7 @@ h1 {
 }
 
 #scores {
-	/*background-color: blue;*/
+	background-color: lightskyblue;
 	height: 100px;
 	line-height: 40px;
 	text-align: middle;
@@ -31,9 +31,9 @@ h1 {
 }
 
 .totalScores {
-	background-color: green;
+	background-color: chartreuse;
 	margin-bottom:10px;
-	width: 50%;
+	/*width: 50%;*/
 	padding-left: 10px;
 }
 
