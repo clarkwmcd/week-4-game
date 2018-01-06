@@ -1,5 +1,4 @@
 
-$(document).ready(function() {
 
 	var counter = 0;
 	var wins=0;
@@ -10,11 +9,17 @@ $(document).ready(function() {
 	var blue = Math.floor(Math.random()*12)+1;
 	var yellow = Math.floor(Math.random()*12)+1;
 	var green = Math.floor(Math.random()*12)+1;
+
+
+//creates a random number between 1 and 120
+
 	function targetNumber()
 	{
 		randomNumber = Math.floor(Math.random()*120)+1;
 		$("#randomNumber").text(randomNumber);
 	};
+
+//Decide if random number has been met or not
 
 	function logic()
 	{
@@ -26,14 +31,18 @@ $(document).ready(function() {
 			reset();
 		}
 
-		else if (randomNumber < counter)
+		else if (counter > randomNumber)
 		{
 			losses++;
-			alert("You Lost!")
+			var difference = counter - randomNumber;
+			alert("Sorry! You lose, Your Number is "+ counter + ". "+ "You Lost by " + difference +".");
 			$("#losses").text("Losses: " + losses);
+			// $("<audio>");
 			reset();
 		};
 	};
+
+//reset vaules of the crystals
 
 	function reset() 
 	{
@@ -46,34 +55,53 @@ $(document).ready(function() {
 		targetNumber();
 		
 	};
+
+//creates the random number
 	targetNumber();
 
+//when a crystal is clicked increase counter and update HTML
 	$("#redcrystal").click(function()
 	{
-	  counter = counter + red;
-	  $("#totalScore").text(counter);
-	  logic();
+		counter = counter + red;
+		$("#totalScore").text(counter);
+		//delay the alert to allow counter to be updated in the HTML before the alert 
+		setTimeout(function ()
+		{
+			logic();
+		}, 10);
 	});
 
 	$("#bluecrystal").click(function()
 	{
 	  counter = counter + blue;
 	  $("#totalScore").text(counter);
-	  logic();
+
+	  setTimeout(function ()
+		{
+			logic();
+		}, 10);
 	});
 
 	$("#yellowcrystal").click(function()
 	{
 	  counter = counter + yellow;
 	  $("#totalScore").text(counter);
-	  logic();
+
+	  setTimeout(function ()
+		{
+			logic();
+		}, 10);
 	});
 
 	$("#greencrystal").click(function()
 	{
 	  counter = counter + green;
 	  $("#totalScore").text(counter);
-	  logic();
+
+	  setTimeout(function ()
+		{
+			logic();
+		}, 10);
 	});
 
-});
+
