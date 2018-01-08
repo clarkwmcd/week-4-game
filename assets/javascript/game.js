@@ -15,7 +15,7 @@
 
 	function targetNumber()
 	{
-		randomNumber = Math.floor(Math.random()*120)+19;
+		randomNumber = Math.floor(Math.random()*102)+19;
 		$("#randomNumber").text(randomNumber);
 	};
 
@@ -44,7 +44,7 @@
 
 //reset vaules of the crystals
 
-	function reset() 
+	function reset()
 	{
 		red = Math.floor(Math.random()*12)+1;
 		blue = Math.floor(Math.random()*12)+1;
@@ -53,7 +53,7 @@
 		counter = 0;
 		$("#totalScore").text(counter);
 		targetNumber();
-		
+
 	};
 
 //creates the random number
@@ -64,7 +64,7 @@
 	{
 		counter = counter + red;
 		$("#totalScore").text(counter);
-		//delay the alert to allow counter to be updated in the HTML before the alert 
+		//delay the alert to allow counter to be updated in the HTML before the alert
 		setTimeout(function ()
 		{
 			logic();
@@ -103,5 +103,3 @@
 			logic();
 		}, 10);
 	});
-
-
